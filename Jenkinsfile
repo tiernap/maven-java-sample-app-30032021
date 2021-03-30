@@ -4,15 +4,15 @@ pipeline {
      stages {
         stage('Build') {
             steps {
-               sh 'mvn compile'
+               mvn compile
             }
-         
+        }
             
         stage('Test') {
             steps {
-              sh 'mvn test'
+              mvn test
             }
-                
-        }
+        }      
+      
      }
 }
